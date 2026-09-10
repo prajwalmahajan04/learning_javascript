@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Example 1 - Change Text</h3>
+    <h1 id="Title">Hello Its Prajwal</h1>
+    <button onclick="changetext()">Change Text</button>
+    <script>
+        function changetext(){
+            document.getElementById("Title") .innerHTML =  'I am from pune'
+        }
+    </script>
+
+
+    <hr>
+    <h3> Change style using Dom </h3>
+    <p id="msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat commodi provident voluptas numquam eligendi, porro sunt adipisci laboriosam omnis in nulla pariatur esse nostrum maxime dolores voluptate, iste quibusdam ipsa.</p>
+     <button onclick="changecolor()">change color</button>
+
+     <script>
+        function changecolor(){
+            document.getElementById('msg').style.color = 'blue';
+        }
+     </script>
+
+
+     <hr>
+     <h3>change image using DOM</h3>
+     <img id="myimg" src="images/flower.png" width="300" />
+     <button onclick="changeimage()">change Image</button>
+      <script>
+        function changeimage(){
+            document.getElementById('myimg').src='images/krishna.png'
+        }
+    </script>
+
+
+    <h3> get input from user and display</h3>
+    <input type="text" id="nameinput" placeholder="enter name"/>
+     <button onclick="showname()">submit</button>
+     <h2 id="output"></h2>
+     <script>
+        function showname(){
+            let name = document.getElementById('nameinput').value;
+            document.getElementById('output').innerHTML = 'Hello Welcom ' + name;
+        }
+     </script>
+
+     <hr>
+     <h3>change font size using + , -</h3>
+     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, excepturi cupiditate, voluptatum illum numquam quam tempore assumenda ipsa eligendi, laborum eveniet nulla. Quasi dignissimos architecto unde consequatur, incidunt aliquid minus.</p>
+     <button onclick="increase()">+</button>
+     <button onclick="decrease()">+</button>
+     <script>
+        let size = 16;
+        function increase(){
+            size++;
+            document.getElementById('para').style.fontSize = size + 'PX';
+
+        }
+     </script>
+     <hr>
+     <button onclick="toggleTheme()">Togglr Theme</button>
+     <style>
+       body{
+        background-color: aliceblue;color: black;transition: 0.3s;
+
+       }
+       .dark-mode{
+        background-color: black;
+        color: aliceblue;
+       }
+     </style>
+     <script>
+        function toggleTheme(){
+              document.body.classList.toggle("dark-mode");
+
+        }
+      
+     </script>
+
+</body>
+</html>

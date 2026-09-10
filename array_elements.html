@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Array modify and delete</h2>
+
+        <script>
+            //array modify and delete
+            var a = ["Prajwal",22,"Male","software devloper","pune"];
+
+            document.write(a ,"<br>");
+
+            a[4] = "mumbai"; //update
+            a[1] = 23;
+            document.write(a ,"<br>");
+            delete a[2]; //delete
+            delete a[4];
+             document.write(a ,"<br>");
+        </script>
+
+        <br>
+        <h2> Sorting and Reverse</h2>
+
+        <script>
+            //sorting and reverse
+            var b = ["Prajwal","Navjeet","Om","Shubham","Gaurav","Tushar"];
+             document.write(b ,"<br>");
+
+             b.sort();
+              document.write(b ,"<br>");
+
+            b.reverse();
+             document.write(b ,"<br>");
+        </script>
+
+        <h2>Pop and Push</h2>
+        <script>
+            var c = ["Prajwal","Navjeet","Om","Shubham","Gaurav","Tushar"];
+            document.write(c,"<br>");
+            c.pop();
+             c.pop();
+              c.pop();
+             document.write(c ,"<br>");
+             c.push("Rushikesh");
+              c.push("Aryan");
+              document.write(c ,"<br>");
+
+        </script>
+
+        <h2>Shift Unshift</h2>
+        <script>
+            var d =  ["Prajwal","Navjeet","Om","Shubham","Gaurav","Tushar"];
+            document.write(d ,"<br>");
+            d.shift();
+            d.shift();
+            document.write(d ,"<br>");
+            d.unshift("Sagar");
+            document.write(d ,"<br>");
+           
+            
+        </script>
+        <br>
+        <h2>Contact and Join</h2>
+        <script>
+            var a = ["Prajwal","Navjeet","Om","Shubham","Gaurav","Tushar"];
+            var b = ["vivek","sagar","aryan","yash"];
+            var d = ["sakshi","priya","pranjal","sanika"];
+
+            var c = a.concat(b,d);
+            document.write(c ,"<br>");
+
+            var x = c.join("/");
+              document.write(x ,"<br>")
+            
+        </script>
+
+    </body>
+</html>
